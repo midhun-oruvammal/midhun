@@ -5,398 +5,508 @@
   <meta charset="UTF-8">
   <meta name="google-site-verification" content="8SoBCHAJHyIqVSMIlVqNgHGAS3mUSJclsdn-YySuTwc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Midhun O</title>
+  <meta name="description" content="Midhun O — Software Engineer specializing in backend systems, distributed processing pipelines and GenAI applications with Node.js, Python and FastAPI.">
+  <title>Midhun O — Software Engineer | Backend, Full-Stack &amp; GenAI</title>
   <link rel="icon" href="img/header-image.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
-<body class="font-italic">
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 bg-opacity-75 position-fixed w-100 h-auto z-1">
-      <div class="container">
+<body>
+  <div class="noise-overlay" aria-hidden="true"></div>
 
-        <button class="navbar-toggler ml-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class=" ml-3 collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#contact">Contact</a>
-            </li>
-          </ul>
+  <header id="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="brand">Midhun<span class="dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark / light theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a href="files/Midhun_O_Resume.pdf" download class="btn btn-sm btn-primary">Resume</a>
         </div>
       </div>
     </nav>
   </header>
 
-  <section id="home" class="text-center bg-dark text-white" style="padding-top: 200px;padding-bottom: 160px;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mt-4 col-sm-12">
-          <h1 class="fw-lighter h3 mt-5 hello-anim">
-            Hello, It's Me
-          </h1>
-          <h1 class="display-3 fw-bolder name-text">
-            <span class="text-warning">M</span>idhun O
-          </h1>
-          <p class="mt-3 lead name-text">Software Engineer</p>
-        </div>
-        <div class="col-md-6 col-sm-12 my-image">
-          <img src="img/midhun3.png" alt="Profile Image" class="home-img rounded-circle my-image w-50 image-animation">
-        </div>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="grid-lines"></span>
       </div>
-    </div>
-  </section>
-  <section id="skills" class="bg-dark" style="padding-top: 90px; padding-bottom: 90px;">
-    <div class="container">
-      <h2 class="text-center text-light mb-2">Areas Of Expertise</h2>
-      <div class="row mt-0 justify-content-center ">
-        <div class=" text-center col-md-3 col-sm-12">
-          <div class="card no-border-radius skill-width bg-danger text-white mt-4 m-5 w-75">
-            <img src="img/skills/fullstack.jpg" class="card-img-top" alt="Full Stack Development">
-            <div class="card-body text-center">
-              <h5 class="card-title ">Full Stack Development</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="card no-border-radius skill-width bg-success text-white mt-4 m-5 w-75">
-            <img src="img/skills/front.jpg" class="card-img-top" alt="Front-end Development">
-            <div class="card-body text-center">
-              <h5 class="card-title">Front-end Development</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <div class="card no-border-radius skill-width bg-primary text-white mt-4 m-5 w-75">
-            <img src="img/skills/back.jpg" class="card-img-top" alt="Back-end Development">
-            <div class="card-body text-center">
-              <h5 class="card-title">Back-end Development</h5>
-            </div>
-          </div>
-        </div>
-        <div class=" text-center col-md-3 col-sm-12">
-          <div class="card no-border-radius skill-width bg-secondary text-white mt-4 m-5 w-75">
-            <img src="img/skills/generative-ai.png" class="card-img-top" alt="Full Stack Development">
-            <div class="card-body text-center">
-              <h5 class="card-title ">AI Application Development</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 d-flex justify-content-center text-center">
-          <div class="badge-group">
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2 text-dark" style="background-color: #61dafb;">React</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #007acc;">TypeScript</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #68a063;">Node.js</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2 text-dark" style="background-color: #e7e7e7;">Express.js</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #764abc;">Redux</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2 text-dark" style="background-color: #e5c93c;">JavaScript</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #07689f;">jQuery</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #4378a0;">MySQL</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #7f4acc;">Bootstrap5</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #3498d4;">CSS3</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #f06427;">HTML5</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #fcd240;">Python</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #135c40;">Django</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #ff6c37;">Postman</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #cb3837;">npm</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #602583;">GitHub</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #0d6efd;">Tailwind CSS</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #0f9d58;">Next.js</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #3eaf7c;">React Native</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #ffaf38;">Flask</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #00a3e0;">FastAPI</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #ff5722;">LangChain</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #fc4f8e;">LangServe</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #ffca28;">Llama Index</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #2196f3;">Pinecone</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #b39ddb;">Large Language Models</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #ff4081;">Hugging Face</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #9c27b0;">Create-llama</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #673ab7;">Amazon S3</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #4285f4;">Azure Blob Storage</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #ff7043;">Firebase Authentication</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #43a047;">JWT</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #d32f2f;">SonarQube</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #4caf50;">ESLint</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #00bcd4;">SendGrid</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #673ab7;">Material UI</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #ff7043;">Streamlit UI</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #ffca28;">Anaconda</span>
-            <span class="badge skill-badge badge-pill pl-4 pr-4 pt-2 pb-2" style="background-color: #03a9f4;">Jupyter</span>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    </div>
-  </section>
-
-  <section id="projects" class="bg-dark" style="padding-top: 60px;"> 
-    <div class="container">
-      <h2 class="text-center mb-5 text-white pt-5">Showcases</h2>
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="d-flex flex-wrap justify-content-center">
-            <div class="thumbnail mx-5 mb-5 mt-4 thumb-bg border-0 text-white col-sm-12 col-md-4 p-4">
-              <img src="img/projects/HomeFinder.png" class="card-img-top mb-3" alt="Tic Tac Toe Game">
-              <div class="caption">
-                <h5 class="card-title text-center mb-2">AI Home Recommender</h5>
-                <p class="card-text m-4">Built an AI-powered home recommender system using Next.js, LlamaIndex, Pinecone, MongoDB, Open AI and Flask.</p>
-                <div class="text-center mb-2">
-                  <a href="files/HomeFinder_demo_working.mov" class="btn btn-outline-light" target="_blank">View Demo</a>
-                  <a href="files/HomeHunt_Architecture.pdf" class="btn btn-outline-warning">View Architecture</a>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail mx-5 mb-5 mt-4 thumb-bg border-0 text-white col-sm-12 col-md-4 p-4">
-              <img src="img/projects/Ecommerce.png" class="card-img-top mb-3" alt="Todo List App">
-              <div class="caption">
-                <h5 class="card-title text-center mb-2">E-Commerce platform </h5>
-                <p class="card-text m-4">Developed a dynamic shopping cart application using React, Node.js, and MySQL.
-                </p>
-                <div class="text-center mb-2">
-                  <a href="https://github.com/midhun-o/e-commerce" class="btn btn-outline-light">GitHub</a>
-                  <a href="https://easycart-bay.vercel.app/" class="btn btn-outline-warning">Visit Project</a>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail mx-5 mb-5 mt-4 thumb-bg bg-dark border-0 text-white col-sm-12 col-md-4 p-4">
-              <img src="img/projects/shopping-cart-jquery.png" class="card-img-top mb-3" alt="Shopping Cart (jQuery)">
-              <div class="caption">
-                <h5 class="card-title text-center mb-2">Shopping Cart (jQuery)</h5>
-                <p class="card-text m-4">This shopping cart project was created using jQuery.</p>
-                <div class="text-center mb-2">
-                  <a href="https://github.com/midhun-oruvammal/shopping-cart-jQuery.git"
-                    class="btn btn-outline-light">GitHub</a>
-                  <a href="https://midhun-oruvammal.github.io/shopping-cart-jQuery/"
-                    class="btn btn-outline-warning">Visit Project</a>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail mx-5 mb-5 mt-4 thumb-bg border-0 text-white col-sm-12 col-md-4 p-4">
-              <img src="img/projects/tic-tac-toe.png" class="card-img-top mb-3" alt="Tic Tac Toe Game">
-              <div class="caption">
-                <h5 class="card-title text-center mb-2">Tic Tac Toe Game</h5>
-                <p class="card-text m-4">Enjoy a classic game of Tic Tac Toe against an AI opponent.</p>
-                <div class="text-center mb-2">
-                  <a href="https://github.com/midhun-oruvammal/tictactoe" class="btn btn-outline-light">GitHub</a>
-                  <a href="https://midhun-oruvammal.github.io/tictactoe/" class="btn btn-outline-warning">Play Game</a>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail mx-5 mb-5 mt-4 thumb-bg border-0 text-white col-sm-12 col-md-4 p-4">
-              <img src="img/projects/todo-list.png" class="card-img-top mb-3" alt="Todo List App">
-              <div class="caption">
-                <h5 class="card-title text-center mb-2">Todo List App</h5>
-                <p class="card-text m-4">The app empowers users to efficiently manage their tasks by creating, editing,
-                  and deleting to-do items.</p>
-                <div class="text-center mb-2">
-                  <a href="https://github.com/midhun-oruvammal/todo-list.git" class="btn btn-outline-light">GitHub</a>
-                  <a href="https://midhun-oruvammal.github.io/todo-list/" class="btn btn-outline-warning">Visit
-                    Project</a>
-                </div>
-              </div>
-            </div>
-            <div class="thumbnail mx-5 mb-5 mt-4 thumb-bg bg-dark border-0 text-white col-sm-12 col-md-4 p-4">
-              <img src="img/projects/shopping-cart.png" class="card-img-top mb-3" alt="Shopping Cart">
-              <div class="caption">
-                <h5 class="card-title text-center mb-2">E-Commerce (Django)</h5>
-                <p class="card-text m-4">This E-Commerce project was built using Django framework.</p>
-                <div class="text-center mb-2">
-                  <a href="https://github.com/leo2op/shopping_cart" class="btn btn-outline-light">GitHub</a>
-                  <a href="https://midhunprtz.pythonanywhere.com/" class="btn btn-outline-warning">Visit Project</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section id="about" class="bg-dark h-100">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 align-items-center justify-content-center d-flex">
-          <img src="img/midhun1.png" alt="Profile Image" class="bg-warning about-image w-50 p-4 img-fluid">
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <h2 class="text-white fw-light text-center mt-2">About <strong class="fw-bold text-warning">Me</strong></h2>
-          <p class="lead text-white fw-light mt-4 m-4 about-text">Passionate about coding and exploring new technologies
-            to build impactful solutions.</p>
-          <p class="mb-5 text-white fw-light m-4 about-text">Proficient in technologies like ReactJS and Node.js, with expertise in databases like MongoDB and MySQL. Skilled in AI
-            frameworks and tools to innovate and deliver impactful projects in dynamic environments </p>
-          <p class="align-items-center justify-content-center d-flex">
-            <a href="#contact" class="btn btn-outline-light w-25 text-center mx-2 pt-2 pb-2 btn-sm smoothscroll">Hire
-              Me</a>
-            <a href="files/Midhun_O.pdf" download=""
-              class="btn btn-outline-warning text-center w-25 pt-2 pb-2 mx-2 btn-sm">Download CV</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Hi, I'm</p>
+          <h1 class="hero-name reveal">Midhun O</h1>
+          <p class="hero-role reveal">
+            <span id="roleText">Backend Engineer</span><span class="cursor">|</span>
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="education" class="py-5 bg-dark">
-    <div class="container">
-      <h2 class="text-center mb-5 text-white">Education</h2>
-      <div class="row">
-        <div class="col-md-6 d-flex justify-content-center align-content-center">
-          <div class="card no-border-radius bg-warning text-dark m-3 p-4">
-            <div class="card-body">
-              <h5 class="card-title">Bachelor of Science in Computer Science</h5>
-              <p class="card-text">AWH Special College, Kallai 2020 - 2023</p>
-              <p class="card-text">Maintained a stellar 7.5 CGPA throughout the Bachelor of Science in Computer Science
-                program, demonstrating consistent academic excellence.</p>
-            </div>
+          <p class="hero-summary reveal">
+            Software Engineer with <strong>3+ years of experience</strong> building backend systems,
+            distributed processing pipelines, and AI-driven applications using Node.js and Python.
+            Experienced in event-driven microservices, asynchronous workflows, RAG pipelines and LLM
+            integrations for BFSI and automation platforms.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="files/Midhun_O_Resume.pdf" download class="btn btn-ghost">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+          </div>
+          <div class="hero-meta reveal">
+            <a href="mailto:midhunprtz@gmail.com"><i class="fa-solid fa-envelope"></i> midhunprtz@gmail.com</a>
+            <a href="tel:+917736310543"><i class="fa-solid fa-phone"></i> +91 77363 10543</a>
+            <span><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka</span>
           </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-center align-content-center">
-          <div class="card no-border-radius bg-warning  text-dark m-3 p-4">
-            <div class="card-body">
-              <h5 class="card-title">Diploma in Computer Engineering</h5>
-              <p class="card-text">Kerala Government Polytechnic College, 2016 - 2019</p>
-              <p class="card-text">Graduated with an impressive CGPA of 6.67, demonstrating exceptional proficiency in
-                computer engineering and successful completion of relevant coursework.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience" class="py-3 bg-dark text-white pb-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Internships</h2>
-      <div class="row ">
-        <div class="col-md-6 d-flex justify-content-center align-content-center">
-          <div class="card no-border-radius m-3 bg-warning text-dark p-4">
-            <div class="card-body">
-              <h5 class="card-title">Internship in Python Full Stack Development</h5>
-              <p class="card-text">Quest Innovative Solutions, Calicut , 2019 </p>
-              <p class="card-text">Received comprehensive training in Python and its application in web development.</p>
-            </div>
+        <div class="hero-visual reveal">
+          <div class="hero-image-wrap">
+            <img src="img/midhun-hero.png" alt="Midhun O" class="hero-image">
+            <span class="orbit-ring ring-1"></span>
+            <span class="orbit-ring ring-2"></span>
+            <span class="badge-float badge-float-1"><i class="fa-solid fa-robot"></i> GenAI</span>
+            <span class="badge-float badge-float-2"><i class="fa-brands fa-node-js"></i> Node.js</span>
+            <span class="badge-float badge-float-3"><i class="fa-brands fa-python"></i> Python</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
 
-  <section id="certificates" class=" bg-dark pb-4">
-    <div class="container">
-      <h2 class="text-center mb-5 text-white pt-5">Certifications &amp; Achievements</h2>
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="d-flex flex-wrap justify-content-center">
-            <div class="thumbnail mx-5 mb-5 mt-4 certificate-bg border-0 text-white col-sm-12 col-md-4 p-4">
-              <img src="img/certificates/Python Kaggle.png"
-                class="certificate-img card-img-top mb-3 w-50 d-block mx-auto" alt="Quest">
-              <div class="caption">
-                <h5 class="card-title text-center mb-2">Certification for completion of Python course</h5>
-                <p class="card-text m-1 text-center">Kaggle • 2023</p>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-image-wrap">
+            <img src="img/midhun3.png" alt="Midhun O illustrated portrait" class="about-image">
+          </div>
+        </div>
+        <div class="about-copy">
+          <p class="section-eyebrow reveal">About Me</p>
+          <h2 class="section-title reveal">Building reliable systems &amp; practical AI products</h2>
+          <p class="reveal">
+            I'm a Software Engineer based in Bengaluru with 3+ years of experience across backend systems,
+            distributed processing pipelines, and AI-driven applications built with Node.js and Python.
+            I design event-driven microservices, asynchronous processing workflows and REST APIs for BFSI
+            and automation platforms.
+          </p>
+          <p class="reveal">
+            My recent focus has been on Generative AI — RAG pipelines, LLM integrations (Claude, Gemini),
+            document intelligence and test automation — paired with full-stack delivery using React and
+            hands-on ownership from database design to deployment on AWS.
+          </p>
+          <div class="about-facts reveal">
+            <div class="fact">
+              <i class="fa-solid fa-briefcase"></i>
+              <div><span>Role</span><strong>Software Engineer</strong></div>
+            </div>
+            <div class="fact">
+              <i class="fa-solid fa-location-dot"></i>
+              <div><span>Based in</span><strong>Bengaluru, India</strong></div>
+            </div>
+            <div class="fact">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div><span>Education</span><strong>B.Sc. Computer Science</strong></div>
+            </div>
+            <div class="fact">
+              <i class="fa-solid fa-circle-check"></i>
+              <div><span>Availability</span><strong>Open to opportunities</strong></div>
+            </div>
+          </div>
+          <div class="hero-cta reveal">
+            <a href="#contact" class="btn btn-primary">Let's Talk</a>
+            <a href="https://www.linkedin.com/in/midhun-oruvammal/" target="_blank" rel="noopener" class="btn btn-ghost">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <p class="section-eyebrow reveal center">What I Work With</p>
+        <h2 class="section-title reveal center">Technical Skills</h2>
+        <p class="section-subtitle reveal center">
+          A toolkit spanning backend engineering, distributed systems, and generative AI.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>Backend &amp; Languages</h3>
+            <div class="chip-group">
+              <span class="chip">Python</span><span class="chip">Node.js</span><span class="chip">FastAPI</span>
+              <span class="chip">Express.js</span><span class="chip">Flask</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-display"></i></div>
+            <h3>Frontend</h3>
+            <div class="chip-group">
+              <span class="chip">React.js</span><span class="chip">Next.js</span><span class="chip">ES6+ JavaScript</span>
+              <span class="chip">Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3>Distributed Systems</h3>
+            <div class="chip-group">
+              <span class="chip">Event-Driven Microservices</span><span class="chip">RabbitMQ</span>
+              <span class="chip">Asynchronous Processing</span><span class="chip">Redis</span><span class="chip">Redis/RQ</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Databases &amp; Storage</h3>
+            <div class="chip-group">
+              <span class="chip">MongoDB</span><span class="chip">MySQL</span><span class="chip">AWS S3</span>
+              <span class="chip">ChromaDB</span><span class="chip">Pinecone</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Generative AI</h3>
+            <div class="chip-group">
+              <span class="chip">RAG Pipelines</span><span class="chip">LLM Integration</span><span class="chip">LangChain</span>
+              <span class="chip">NER</span><span class="chip">Claude</span><span class="chip">Gemini</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-cloud"></i></div>
+            <h3>Cloud &amp; DevOps</h3>
+            <div class="chip-group">
+              <span class="chip">AWS ECS</span><span class="chip">Docker</span><span class="chip">EC2</span><span class="chip">Lambda</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-vial"></i></div>
+            <h3>Testing &amp; Tools</h3>
+            <div class="chip-group">
+              <span class="chip">Playwright</span><span class="chip">Pandas</span><span class="chip">Git</span>
+              <span class="chip">Bitbucket</span><span class="chip">Jira</span><span class="chip">Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal center">Career Path</p>
+        <h2 class="section-title reveal center">Professional Experience</h2>
+        <p class="section-subtitle reveal center">
+          Work carried out under company ownership — codebases are private, so no public repository or
+          live demo links are available for these engagements.
+        </p>
+
+        <div class="timeline">
+          <!-- MetaZ Digital -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Software Engineer</h3>
+                  <p class="timeline-company">MetaZ Digital · Bengaluru</p>
+                </div>
+                <span class="timeline-date">Nov 2024 – Present</span>
+              </div>
+
+              <div class="project-block">
+                <div class="project-block-head">
+                  <h4>Test Suite AI <span class="tag-private"><i class="fa-solid fa-lock"></i> Enterprise Project</span></h4>
+                  <p class="project-block-sub">AI-Powered Test Automation Platform</p>
+                </div>
+                <ul>
+                  <li>Built a full-stack AI-powered test automation platform that reduced manual test creation time by 80% by converting BRDs, PDFs, and captured user journeys into structured manual and automated test assets.</li>
+                  <li>Designed and developed FastAPI backend services for document processing, requirement extraction, test generation, workflow management, artifact versioning, and persistence using MongoDB and AWS S3.</li>
+                  <li>Integrated Claude, Gemini, and ChromaDB into requirement-analysis, semantic-retrieval, and test-planning workflows, achieving 90% accuracy in automated Playwright script generation.</li>
+                  <li>Built a Chrome extension-based workflow capture system with locator scanning and Page Object Model generation, converting recorded user interactions into reusable automation assets.</li>
+                  <li>Developed Node.js and Playwright execution workflows for generated automation scripts, including screenshots, execution artifacts, and HTML reports.</li>
+                  <li>Implemented Redis/RQ asynchronous workers to move long-running AI generation tasks outside the main API request lifecycle and support reliable background processing.</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <div class="project-block-head">
+                  <h4>Loan Origination System (LOS) <span class="tag-private"><i class="fa-solid fa-lock"></i> Client: Decimal Technologies</span></h4>
+                </div>
+                <ul>
+                  <li>Designed and developed Node.js/Express APIs and microservices supporting loan validation, verification, and approval workflows for BFSI clients.</li>
+                  <li>Built an event-driven document-processing architecture using RabbitMQ and AWS S3, enabling uploaded financial documents to be processed asynchronously outside synchronous API workflows.</li>
+                  <li>Developed Python worker services to consume processing jobs, retrieve documents from S3, and perform AI-driven structured data extraction from financial documents.</li>
+                  <li>Integrated external verification APIs including GST, Udyam, and LinkedIn to support identity and business-verification workflows within the loan-processing system.</li>
+                  <li>Developed Python/Pandas validation pipelines to compare AI-extracted financial information with user-submitted application data and identify discrepancies.</li>
+                  <li>Automated First Time Report (FTR) generation for loan assessment, reducing manual verification effort by approximately 70% and improving the efficiency of financial-validation workflows.</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <div class="project-block-head">
+                  <h4>Banking CAM <span class="tag-private"><i class="fa-solid fa-lock"></i> Client: Decimal Technologies</span></h4>
+                </div>
+                <ul>
+                  <li>Built backend services and data-processing pipelines for analyzing large banking transaction datasets used in financial-analysis workflows.</li>
+                  <li>Implemented LLM-based Named Entity Recognition using Qwen to extract transaction parties, references, dates, amounts, and other structured entities from banking data.</li>
+                  <li>Developed LLM-assisted and Pandas-based transaction classification pipelines to identify recurring payments, self-transfers, and related-party transactions.</li>
+                  <li>Designed backend APIs for transaction-pattern analysis and anomaly detection, supporting financial risk-assessment workflows.</li>
+                  <li>Optimized transaction-processing workflows, reducing analysis time by 40% for large banking statements and complex transaction histories.</li>
+                </ul>
               </div>
             </div>
-            <div class="thumbnail mx-5 mb-5 mt-4 certificate-bg border-0 text-white col-sm-12 col-md-4 p-4">
-              <img src="img/certificates/Data Visualization using Power BI.png"
-                class="certificate-img card-img-top mb-3 w-50 d-block mx-auto" alt="Quest">
-              <div class="caption">
-                <h5 class="card-title text-center mb-2">Certification for completion of Data Visualization With Power BI
-                </h5>
-                <p class="card-text m-1 text-center">Great Learning Academy • 2023</p>
+          </div>
+
+          <!-- Coddle Technologies -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Software Engineer</h3>
+                  <p class="timeline-company">Coddle Technologies · Kozhikode</p>
+                </div>
+                <span class="timeline-date">Jun 2023 – Oct 2024</span>
+              </div>
+
+              <div class="project-block">
+                <div class="project-block-head">
+                  <h4>Greenplus <span class="tag-private"><i class="fa-solid fa-lock"></i> Enterprise Project</span></h4>
+                  <p class="project-block-sub">CRM Platform</p>
+                </div>
+                <ul>
+                  <li>Developed Node.js/Express backend APIs for lead management and customer onboarding.</li>
+                  <li>Built backend services integrated with React applications to support end-to-end customer onboarding.</li>
+                  <li>Implemented automated PDF generation workflows using submitted form and onboarding data.</li>
+                  <li>Integrated Yousign e-signature APIs to support digital document execution and verification.</li>
+                  <li>Implemented customer communication and authentication workflows using SendGrid email automation.</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <div class="project-block-head">
+                  <h4>RAG-Based AI Chatbot <span class="tag-private"><i class="fa-solid fa-lock"></i> Enterprise Project</span></h4>
+                  <p class="project-block-sub">Customer-Support Chatbot for E-Commerce</p>
+                </div>
+                <ul>
+                  <li>Built backend services for a Retrieval-Augmented Generation customer-support chatbot.</li>
+                  <li>Developed document-ingestion and embedding pipelines using LangChain.</li>
+                  <li>Stored vector embeddings in Pinecone to enable semantic retrieval across product documentation and FAQs.</li>
+                  <li>Integrated LLMs to generate context-aware responses grounded in retrieved product information.</li>
+                  <li>Developed APIs enabling real-time chatbot interaction with frontend applications.</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="mt-5 pt-5 m-3">
-    <div class="container">
-      <h2 class="text-center pt-5 mb-5">Get in Touch</h2>
-      <div class="row">
-        <div class="col-md-8 ">
-          <form action="mailto:midhunprtz@gmail.com" method="post" enctype="text/plain">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" name="Name" required>
+    <!-- PERSONAL PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <p class="section-eyebrow reveal center">Side Builds</p>
+        <h2 class="section-title reveal center">Personal Projects</h2>
+        <p class="section-subtitle reveal center">
+          Independent projects with public code and live demos.
+        </p>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="img/projects/HomeFinder.png" alt="AI Home Recommender">
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="Email" required>
+            <div class="project-body">
+              <h3>AI Home Recommender</h3>
+              <p>An AI-powered home recommender system built with Next.js, LlamaIndex, Pinecone, MongoDB, OpenAI and Flask.</p>
+              <div class="project-links">
+                <a href="files/HomeFinder_demo_working.mov" target="_blank" class="btn btn-sm btn-ghost"><i class="fa-solid fa-play"></i> Demo</a>
+                <a href="files/HomeHunt_Architecture.pdf" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-diagram-project"></i> Architecture</a>
+              </div>
             </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" name="Message" rows="5" required></textarea>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="img/projects/Ecommerce.png" alt="E-Commerce platform">
             </div>
-            <button type="submit" class="btn btn-warning w-100">Send Message</button>
-          </form>
-        </div>
-        <div class="col-md-4">
-          <h3 class="text-center mb-4 mt-5">Connect with Me on Socials</h3>
-          <div class=" py-3 d-flex justify-content-center align-content-center ml-3 mr-3">
-            <a href="https://www.instagram.com/midhu__________n/"><i
-                class="col-md-2 col-sm-4 fa-brands fa-instagram  fa-2x" style="color: #ffc107;"></i></a>
-            <a href="https://twitter.com/Lionelcruyff"><i class="col-md-2 col-sm-4 ml-2 fa-brands fa-twitter fa-2x" style="color: #ffc107;"></i></a>
-            <a href="https://github.com/leo2op"><i class="col-md-2 col-sm-4 ml-2 fa-brands fa-github fa-2x"
-                style="color: #ffc107;"></i></a>
-            <a href="https://www.linkedin.com/in/midhun-oruvammal/"><i
-                class="col-md-2 col-sm-4 ml-2 fa-brands fa-linkedin  fa-2x" style="color: #ffc107;"></i></a>
-            <a href="mailto:midhunprtz@gmail.com"><i class="col-md-2 ml-2 col-sm-4 fa-sharp fa-solid fa-envelope fa-2x"
-                style="color: #ffc107;"></i></a>
-          </div><br>
-          <div class="col-md-12 text-center "><strong> Name </strong>: Midhun O</div>
-          <div class="col-md-12 text-center"><strong>Email </strong>: midhunprtz@gmail.com</div>
-          <div class="col-md-12 text-center"><strong>Phone </strong>: +919656610543</div>
-          <div class="col-md-12 text-center"><strong>Address </strong>: Kozhikode, Kerala</div>
+            <div class="project-body">
+              <h3>E-Commerce Platform</h3>
+              <p>A dynamic shopping cart application built using React, Node.js, and MySQL.</p>
+              <div class="project-links">
+                <a href="https://github.com/midhun-o/e-commerce" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://easycart-bay.vercel.app/" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="img/projects/shopping-cart-jquery.png" alt="Shopping Cart jQuery">
+            </div>
+            <div class="project-body">
+              <h3>Shopping Cart (jQuery)</h3>
+              <p>A shopping cart experience built with jQuery, focused on interactive DOM manipulation.</p>
+              <div class="project-links">
+                <a href="https://github.com/midhun-oruvammal/shopping-cart-jQuery.git" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://midhun-oruvammal.github.io/shopping-cart-jQuery/" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="img/projects/tic-tac-toe.png" alt="Tic Tac Toe Game">
+            </div>
+            <div class="project-body">
+              <h3>Tic Tac Toe Game</h3>
+              <p>A classic game of Tic Tac Toe playable against an AI opponent.</p>
+              <div class="project-links">
+                <a href="https://github.com/midhun-oruvammal/tictactoe" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://midhun-oruvammal.github.io/tictactoe/" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Play</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="img/projects/todo-list.png" alt="Todo List App">
+            </div>
+            <div class="project-body">
+              <h3>Todo List App</h3>
+              <p>A task manager that lets users create, edit, and delete to-do items efficiently.</p>
+              <div class="project-links">
+                <a href="https://github.com/midhun-oruvammal/todo-list.git" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://midhun-oruvammal.github.io/todo-list/" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <img src="img/projects/shopping-cart.png" alt="E-Commerce Django">
+            </div>
+            <div class="project-body">
+              <h3>E-Commerce (Django)</h3>
+              <p>An e-commerce project built using the Django framework.</p>
+              <div class="project-links">
+                <a href="https://github.com/leo2op/shopping_cart" target="_blank" rel="noopener" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://midhunprtz.pythonanywhere.com/" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="bg-dark text-light mt-5 py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>&copy; 2023 Midhun Oruvammal. All rights reserved.</p>
+    <!-- EDUCATION & CERTIFICATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal center">Background</p>
+        <h2 class="section-title reveal center">Education &amp; Certification</h2>
+
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h3>Bachelor of Computer Science</h3>
+              <p class="edu-sub">University of Calicut · March 2023</p>
+            </div>
+          </div>
+
+          <div class="edu-card reveal">
+            <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div>
+              <h3>Develop Generative AI Applications: Get Started</h3>
+              <p class="edu-sub">IBM · Coursera · February 2026</p>
+              <ul class="edu-list">
+                <li>Covered LangChain fundamentals, prompt engineering, chains, and agents for building Generative AI applications.</li>
+                <li>Built a Generative AI web application using Flask and structured LLM outputs.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <p class="section-eyebrow reveal center">Get In Touch</p>
+        <h2 class="section-title reveal center">Let's Build Something Together</h2>
+        <p class="section-subtitle reveal center">
+          Open to new opportunities and interesting problems — reach out any time.
+        </p>
+
+        <div class="contact-grid">
+          <a href="mailto:midhunprtz@gmail.com" class="contact-card reveal">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+            <strong>midhunprtz@gmail.com</strong>
+          </a>
+          <a href="tel:+917736310543" class="contact-card reveal">
+            <i class="fa-solid fa-phone"></i>
+            <span>Phone</span>
+            <strong>+91 77363 10543</strong>
+          </a>
+          <a href="https://www.linkedin.com/in/midhun-oruvammal/" target="_blank" rel="noopener" class="contact-card reveal">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+            <strong>midhun-oruvammal</strong>
+          </a>
+          <a href="https://github.com/leo2op" target="_blank" rel="noopener" class="contact-card reveal">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+            <strong>leo2op</strong>
+          </a>
+        </div>
+
+        <div class="contact-cta reveal">
+          <a href="mailto:midhunprtz@gmail.com" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-paper-plane"></i> Send Me a Message
+          </a>
+          <a href="files/Midhun_O_Resume.pdf" download class="btn btn-ghost btn-lg">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Midhun O. All rights reserved.</p>
+      <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
     </div>
   </footer>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://kit.fontawesome.com/fed5f2402d.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
